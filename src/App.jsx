@@ -1,8 +1,10 @@
+import { PressListContainer } from './ui/PressListContainer';
+
 function App() {
 	return (
 		<>
 			<div>
-				<h1>vite + react</h1>
+				<PressListContainer />
 			</div>
 		</>
 	);

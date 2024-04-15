@@ -1,11 +1,18 @@
 .
 ├── README.md
+├── dist
+│   ├── assets
+│   │   └── index-CvKLZ7dy.js
+│   ├── index.html
+│   └── vite.svg
 ├── i.md
 ├── index.html
 ├── package-lock.json
 ├── package.json
 ├── public
 │   └── vite.svg
+├── server
+│   └── server.js
 ├── src
 │   ├── App.jsx
 │   ├── apis
@@ -20,4 +27,4 @@
 │       └── PressListContainer.jsx
 └── vite.config.js
 
-7 directories, 14 files
+10 directories, 18 files

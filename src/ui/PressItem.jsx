@@ -1,14 +1,16 @@
+import { useEffect, useState } from 'react';
 import { styled } from 'styled-components';
-import { getImageUrl } from '../apis/data';
+import { getImages } from '../apis/getImages';
+
 export function PressItem() {
-	const images = getImageUrl();
+	const [images, setImages] = useState([]);
+	useEffect(() => {
+		getImages().then((data) => {
+			setImages(data);
+		});
+	}, []);
 	console.log(images);
-	return (
-		<StyledDiv>
-			<StyledTitle>로고</StyledTitle>
-		</StyledDiv>
-	);
+	return <StyledDiv></StyledDiv>;
 }
 
 const StyledDiv = styled.div``;
-const StyledTitle = styled.span``;
